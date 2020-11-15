@@ -1,6 +1,5 @@
 <html>
     <head>
-        <title></title>
     </head>
     <body>
         <h1>Toolit-ai</h1>
