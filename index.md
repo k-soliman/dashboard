@@ -1,8 +1,6 @@
 <html>
     <head>
-        <title>
-            "HTML reference"
-        </title>
+        <title></title>
     </head>
     <body>
         <h1>Toolit-ai</h1>
