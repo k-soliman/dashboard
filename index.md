@@ -1,6 +1,4 @@
 <html>
-    <head>
-    </head>
     <body>
         <h1>Toolit-ai</h1>
       <h2>Computers and coding as part of our profession</h2>
