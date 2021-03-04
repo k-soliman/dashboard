@@ -3,3 +3,11 @@ title: Toolit(ML)
 
 # Your name to show in the footer
 author: Kareem Soliman
+
+defaults:
+  -
+scope:
+path: "" # an empty string here means all files in the project
+type: "posts"
+values:
+is_post: true
