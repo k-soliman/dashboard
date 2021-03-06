@@ -41,16 +41,45 @@ img.thumbnail {display: block;
 
 </style>
 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 5px;
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+</style>
+
+     
+<div class="row">
+         
+<p align="center" style="font-size:20px";><a href="https://covid19.ncdhhs.gov/dashboard/data-behind-dashboards" target="_blank">Source of Data!</a></p></div>
+ 
+<img alt="Toolit Logo" class="thumbnail" src="https://github.com/k-soliman/k-soliman.github.io/blob/main/toolit.png?raw=true"/>
+   
+    <p align="center" style="font-size:20px";>Powered by Toolit(ML)<br>Last update: 03/04/2021</p></div>
     
-    <p align="center" style="font-size:20px";><a href="https://covid19.ncdhhs.gov/dashboard/data-behind-dashboards" target="_blank">Source of Data!</a></p>  
-    
-    <div>
-    
-    <img alt="Toolit Logo" class="thumbnail" src="https://github.com/k-soliman/k-soliman.github.io/blob/main/toolit.png?raw=true"/>
-    </div>
-    <p align="center" style="font-size:20px";>Powered by Toolit(ML)<br>Last update: 03/04/2021</p>
-      
-    
+<div class="sidenav">
+  <a href="#">About</a>
+  <a href="https://k-soliman.github.io/page2.html" target="_blank">Imaging</a>
+  <a href="#">Bioinformatics</a>
+  <a href="#">Contact</a>
+         
+       
+</div>
+         
              
 <style>
                      
@@ -72,6 +101,35 @@ p.ex1 {
 
   
   <body>
+  
+  <style>
+  
+  .sidenav {
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  top: 300px;
+  left: 10px;
+  background: #F2F2F2;
+  overflow-x: hidden;
+  padding: 0px 0;
+  
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+</style>
+
     
      <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.0.min.js" integrity="sha384HjagQp6T0/7bxYTAXbLotF1MLAGWmhkY5siA1Gc/pcEgvgRPtMsRn0gQtMwGKiw1" crossorigin="anonymous"></script>
         <script type="text/javascript">
@@ -193,10 +251,5 @@ p.ex1 {
     
     
    </body>
-
-<p align="center" style="font-size:20px";><a href="https://k-soliman.github.io/page2.html" target="_blank">Comming soon</a></p>  
-
-      
   
 </html>
-
