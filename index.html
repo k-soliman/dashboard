@@ -71,18 +71,19 @@ img.thumbnail {display: block;
    
     <p align="center" style="font-size:20px";>Powered by Toolit(ML)<br>Last update: 03/04/2021</p></div>
     
-<div class="sidenav">
-  <a href="#">About</a>
-  <a href="https://k-soliman.github.io/page2.html" target="_blank">Imaging</a>
-  <a href="#">Bioinformatics</a>
-  <a href="#">Contact</a>
+<div id="mySidenav" class="sidenav">
+  <a align="right" href="#" id="about">About</a>
+<a href="#" id="blog">Sharing  projects</a>
+  <a align="right" href="#" id="projects">Jupyter-notebooks</a>
+  <a align="right" href="#" id="contact">Contact info.</a>
+</div>
          
        
 </div>
          
              
 <style>
-                     
+                    
            
 p.ex1 {
  text-align:left;
@@ -97,39 +98,50 @@ p.ex1 {
   
   </style>
 
-  </head>
-
-  
-  <body>
-  
-  <style>
-  
-  .sidenav {
-  width: 200px;
+ <style>
+#mySidenav a {
   position: absolute;
-  z-index: 1;
-  top: 300px;
-  left: 10px;
-  background: #F2F2F2;
-  overflow-x: hidden;
-  padding: 0px 0;
-  
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
+  left: -80px;
+  transition: 0.5s;
+  padding: 15px;
+  width: 180px;
   text-decoration: none;
-  font-size: 25px;
-  color: #2196F3;
-  display: block;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
 }
 
-.sidenav a:hover {
-  color: #064579;
+#mySidenav a:hover {
+  left: 0;
 }
 
+#about {
+  top: 300px;
+  margin-left: 0px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 360px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 420px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 480px;
+  background-color: #555
+}
 </style>
 
+</head>
+
+
+
+ <body>
     
      <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.0.min.js" integrity="sha384HjagQp6T0/7bxYTAXbLotF1MLAGWmhkY5siA1Gc/pcEgvgRPtMsRn0gQtMwGKiw1" crossorigin="anonymous"></script>
         <script type="text/javascript">
@@ -253,3 +265,5 @@ p.ex1 {
    </body>
   
 </html>
+
+
