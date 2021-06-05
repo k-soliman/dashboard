@@ -32,24 +32,6 @@ body {
   color: black;
   border-radius: 5px;
 }
-
-.container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
-}
-
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
                                                                                                                 
 .topnav {
   overflow: hidden;
@@ -96,14 +78,25 @@ img.thumbnail {display: block;
 }   
                                                                                                                 
                                                                                                               
-
 </style>
 
 </head>
 
 
  <body>
+                                                                                                               
+<script>
 
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+        
 
 <div class="mobile-container">
 
@@ -132,13 +125,13 @@ img.thumbnail {display: block;
     <p align="center" style="font-size:15px";><a href="https://covid19.ncdhhs.gov/dashboard/data-behind-dashboards" target="_blank">Source of Data!</a></p>
   
 </div>
-                         
+    
+                                                                                                                                  
   <! div and script blocks of each plot added from bokeh>
     
     <! The Js embedding from bokeh>
-     
-           
-            <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.0.min.js" integrity="sha384-HjagQp6T0/7bxYTAXbLotF1MLAGWmhkY5siA1Gc/pcEgvgRPtMsRn0gQtMwGKiw1" crossorigin="anonymous"></script>
+       
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.0.min.js" integrity="sha384-HjagQp6T0/7bxYTAXbLotF1MLAGWmhkY5siA1Gc/pcEgvgRPtMsRn0gQtMwGKiw1" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.0.min.js" integrity="sha384-ZEPPTjL+mdyqgIq+/pl9KTwzji8Kow2NnI3zWY8+sFinWP/SYJ80BnfeJsa45iYj" crossorigin="anonymous"></script>
         <script type="text/javascript">
             Bokeh.set_log_level("info");
@@ -188,8 +181,6 @@ img.thumbnail {display: block;
           })();
         </script>
     
-  
-    
 <! Text Paragraph explanation of the next plot, plot#2>
 <style>
 div.ex1 {
@@ -207,19 +198,6 @@ div.ex1 {
 <!-- End smartphone / tablet look -->
 
 </div>
-
-<script>
-
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
-        
 
 </body>
 </html>
