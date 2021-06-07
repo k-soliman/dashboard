@@ -115,12 +115,145 @@ ul.is-active {
 
 </style>
 
+
 <style>
+
+<!tabs style code>
+
+.tab-wrap {
+  transition: 0.3s box-shadow ease;
+  border-radius: 6px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  list-style: none;
+  background-color: #fff;
+  margin: 40px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.tab-wrap:hover {
+  box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
+}
+
+.tab {
+  display: none;
+}
+.tab:checked:nth-of-type(1) ~ .tab__content:nth-of-type(1) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(2) ~ .tab__content:nth-of-type(2) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(3) ~ .tab__content:nth-of-type(3) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(4) ~ .tab__content:nth-of-type(4) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(5) ~ .tab__content:nth-of-type(5) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+.tab:first-of-type:not(:last-of-type) + label {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.tab:not(:first-of-type):not(:last-of-type) + label {
+  border-radius: 0;
+}
+.tab:last-of-type:not(:first-of-type) + label {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.tab:checked + label {
+  background-color: #fff;
+  box-shadow: 0 -1px 0 #fff inset;
+  cursor: default;
+}
+.tab:checked + label:hover {
+  box-shadow: 0 -1px 0 #fff inset;
+  background-color: #fff;
+}
+.tab + label {
+  box-shadow: 0 -1px 0 #eee inset;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  flex-grow: 3;
+  text-align: center;
+  background-color: #f2f2f2;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  transition: 0.3s background-color ease, 0.3s box-shadow ease;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.tab + label:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 0 #f4f4f4 inset;
+}
+.tab__content {
+  padding: 10px 25px;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  left: 0;
+  transform: translateY(-3px);
+  border-radius: 6px;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+</style>
+
+<style>
+
 * {box-sizing: border-box;}
 
 .img-comp-container {
   position: relative;
-  height: 200px; /*should be the same height as the images*/
+  height: 400px; /*should be the same height as the images*/
 }
 
 .img-comp-img {
@@ -142,11 +275,12 @@ ul.is-active {
   /*set the appearance of the slider:*/
   width: 40px;
   height: 40px;
-  background-color: #00FF00;
-  opacity: 0.5;
+  background-color: #2196F3;
+  opacity: 0.7;
   border-radius: 50%;
 }
 </style>
+
 <script>
 function initComparisons() {
   var x, i;
@@ -224,18 +358,17 @@ function initComparisons() {
     }
   }
 }
-</script>                      
-
+</script>
+             
 </head>
 
-
- <body>
+ <body style="background-color: #ffffff">
                                                                                                            
-<header>
+<header style="background-color: #4b00ff; opacity:0.9;">
 
   <h1>
     <a href="#"><img alt="Toolit Logo" class="thumbnail" src="https://github.com/k-soliman/k-soliman.github.io/blob/main/toolit.png?raw=true"/ width="50" 
-     height="50"></a>
+     height="50" <p> ML</p></a>
   </h1>
   <nav role="navigation">
     <button id="toggle">Menu</button>
@@ -265,20 +398,39 @@ toggle.addEventListener('click', function(){
   
 </header>
 
-<div>
                      
-<h1>Data Science and AI Roles and examples</h1>
-</div>                     
-                     
-       
-<div style="padding-left:16px">
-   
+  <div class="tab-wrap">
+
+    <!-- active tab on page load gets checked attribute -->
+    <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+    <label for="tab1">Public Health</label>
+
+    <input type="radio" id="tab2" name="tabGroup1" class="tab">
+    <label for="tab2">AI Microscopy</label>
+
+    <input type="radio" id="tab3" name="tabGroup1" class="tab">
+    <label for="tab3">Machine Learning</label>
+    
+    <input type="radio" id="tab4" name="tabGroup1" class="tab">
+    <label for="tab4">Pharmacovigilance</label>
+
+
+    <div class="tab__content">
+      <h3>Covid-19 Dashboards</h3>
+     <p>Making data driven decisions. Promoting a data driven culture!</p>
+                    
+              
     <p align="center" style="font-size:15px";>Powered by Toolit(ML)<br>Last update: 05/31/2021</p>
     
     <p align="center" style="font-size:15px";><a href="https://covid19.ncdhhs.gov/dashboard/data-behind-dashboards" target="_blank">Source of Data!</a></p>
+    
+    <! Text Paragraph explanation of the next plot, plot#2>
+
+         <p>The first plot shows new cases according to specimens date. The second plot shows the total number of confirmed covid-19 cases, the Total Deaths, Total PCR Positive Specimens, and Total Positive Antigen Test speciments by Date.</p>
+    
+
+         <p> The colormap reflects the Number of New reported Deaths (plot #1) and the Total number of Deaths (plot #2).</p>
   
-</div>
- 
 
 <! The Js embedding from bokeh>
        
@@ -288,7 +440,7 @@ toggle.addEventListener('click', function(){
             Bokeh.set_log_level("info");
         </script>
         
-        <div class="bk-root" id="701a950f-9f91-4431-a0ab-8587fa891b47" data-root-id="51686"></div>
+        <p class="bk-root" id="701a950f-9f91-4431-a0ab-8587fa891b47" data-root-id="51686">
             
       
         <script type="application/json" id="52453">
@@ -329,23 +481,59 @@ toggle.addEventListener('click', function(){
             if (document.readyState != "loading") fn();
             else document.addEventListener("DOMContentLoaded", fn);
           })();
-        </script>
+          
+</script>
+
+</div>
     
+<div class="tab__content">
+
+<h3>Superresolution Microscopy</h3>
+<p>Deep-learning-powered microscopes are going to revolutionize many tasks when it comes to image analysis and the operation of microscopes.</p>
+
+ <div class="img-comp-container">
+  <div class="img-comp-img">
+   <img src="https://github.com/k-soliman/k-soliman.github.io/blob/main/Sim1_confocal_multipleNPC_noise.png?raw=true" width="400" height="400"></div>
+  
+  <div class="img-comp-img img-comp-overlay">
+    <img src="https://github.com/k-soliman/k-soliman.github.io/blob/main/Sim1_STED_multipleNPC_noise.png?raw=true" width="400" height="400"></div>
+   </div> 
+</div>
+
+<script>
+/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+initComparisons();
+</script>
+
+<div class="tab__content">
+      <h3>Gradient descent</h3>
+      <p>Gradient descent algorithms enables you to find the best fitting model for your real data that is both noisy and continously changing.</p>
+
+<img src="https://github.com/k-soliman/k-soliman.github.io/blob/main/animation2.gif?raw=true" width="400" height="400">
+     
+    </div>
     
-<! Text Paragraph explanation of the next plot, plot#2>
-<style>
-div.ex1 {
-  text-align: justify;
-   } </style>
-
-    <div class="mobile-container" style="padding-left:16px">
-         <p style="font-size:20px";>The first plot shows new cases according to specimens date. The second plot shows the total number of confirmed covid-19 cases, the Total Deaths, Total PCR Positive Specimens, and Total Positive Antigen Test speciments by Date.</p></div>
+  <div class="tab__content">
+      <h3>FAERS - Drug Data</h3>
+      <p align="center" style="font-size:15px";>Powered by Toolit(ML)<br>Last update: 06/07/2021</p>
     
+    <p align="center" style="font-size:15px";><a href="https://www.fda.gov" target="_blank">Source of Data!</a></p>
+      
+      <p>Staying on top of adverse events reports related to drug use. Managing report systems and databases (SQL and non-SQL types) to keep track of serious side effects.</p>
+      <img src="https://github.com/k-soliman/k-soliman.github.io/blob/main/21Q1_all_med_product.png?raw=true" width="500" height="600">
+      
 
-    <div class="mobile-container" style="padding-left:16px">
-         <p style="font-size:20px";> The colormap reflects the Number of New reported Deaths (plot #1) and the Total number of Deaths (plot #2).</p></div>
-         
+  </div>
+  </div>
 
+<hr>
 
+<div>
+<h1>Latest News</h1>
+<h4>Collaboration with the life science industry!</h4>
+<p>Date: 26-March-2021</p>
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6785182820680654848" height="740" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+</div>
+       
 </body>
 </html>
