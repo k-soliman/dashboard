@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="js "== $0 prefix="og: http://ogp.me/ns#">
+  
+  <head>
+  
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta prefix="og: http://ogp.me/ns#" property='og:title' content="Dashboards Data Reports, Toolit(ML)"/>
+    <meta property="og:type" content="article">
+    <meta name="image" property="og:image content="https://github.com/k-soliman/k-soliman.github.io/blob/main/Covid-19%20new%20cases.jpg?raw=true">
+    <meta prefix="og: http://ogp.me/ns#" property='og:description' content="Turning Data into Interactive reports"/>
+    <meta prefix="og: http://ogp.me/ns#" property='og:url' content="https://k-soliman.github.io"/>
+    <meta name="author" content="Kareem Soliman">
+    <meta prefix="og: http://ogp.me/ns#" charset="utf-8">
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body {
+  font-family: "Arial";
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: #808080;
+  padding: 0.5em;
+  color: #ffffff;
+}
+header a {
+  color: inherit;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.js button {
+  position: absolute;
+  right: 1em;
+  top: 1.8em;
+  padding: 10px;
+  border: 2px solid #FFA500;
+  border-radius: 10px;
+  font-size: 1em;
+  background: transparent;
+  color: #ffffff;
+  display: none;
+}
+button:focus, button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.js nav {
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 1em 1em 0;
+}
+ nav li {
+  margin-bottom: 1em;
+}
+nav a {
+  display: block;
+}
+
+.js ul {
+  display: none;
+}
+
+.js button {
+  display: block;
+}
+
+ul.is-active {
+  display: block;
+}
+
+@media (min-width: 700px) {
+  .js ul {
+    display: block;
+  }
+
+  .js button {
+    display: none;
+  }
+
+  button {
+    display: none;
+  }
+
+  nav {
+    padding-left: 0;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: 1em;
+  }
+}
+
+ul {
+  display: none;
+}
+
+ul.is-active {
+  display: block;
+}
+
+
+</style>
+
+
+<style>
+
+<!tabs style code>
+
+.tab-wrap {
+  transition: 0.3s box-shadow ease;
+  border-radius: 6px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  list-style: none;
+  background-color: #fff;
+  margin: 40px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.tab-wrap:hover {
+  box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
+}
+
+.tab {
+  display: none;
+}
+.tab:checked:nth-of-type(1) ~ .tab__content:nth-of-type(1) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(2) ~ .tab__content:nth-of-type(2) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(3) ~ .tab__content:nth-of-type(3) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(4) ~ .tab__content:nth-of-type(4) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(5) ~ .tab__content:nth-of-type(5) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+.tab:first-of-type:not(:last-of-type) + label {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.tab:not(:first-of-type):not(:last-of-type) + label {
+  border-radius: 0;
+}
+.tab:last-of-type:not(:first-of-type) + label {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.tab:checked + label {
+  background-color: #fff;
+  box-shadow: 0 -1px 0 #fff inset;
+  cursor: default;
+}
+.tab:checked + label:hover {
+  box-shadow: 0 -1px 0 #fff inset;
+  background-color: #fff;
+}
+.tab + label {
+  box-shadow: 0 -1px 0 #eee inset;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  flex-grow: 3;
+  text-align: center;
+  background-color: #f2f2f2;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  transition: 0.3s background-color ease, 0.3s box-shadow ease;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.tab + label:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 0 #f4f4f4 inset;
+}
+.tab__content {
+  padding: 10px 25px;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  left: 0;
+  transform: translateY(-3px);
+  border-radius: 6px;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+</style>
+           
+</head>
+
+ <body style="background-color: #ffffff">
+                                                                                                           
+<header style="background-color: #4b00ff; opacity:0.9;">
+
+  <h1>
+    <a href="https://k-soliman.github.io/#"><img alt="Toolit Logo" class="thumbnail" src="https://github.com/k-soliman/k-soliman.github.io/blob/main/toolit.png?raw=true"/ width="50" 
+     height="50" <p> ML</p></a>
+  </h1>
+  <nav role="navigation">
+    <button id="toggle">Menu</button>
+    <ul id="menu">
+      <li><a href="#">ABOUT ME</a></li>
+      <li><a href="https://k-soliman.github.io/software.html">SOFTWARE</a></li>
+      <li><a href="https://k-soliman.github.io/contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+  
+   <script>
+
+var toggle = document.querySelector('#toggle');
+var menu = document.querySelector('#menu');
+
+toggle.addEventListener('click', function(){
+  if (menu.classList.contains('is-active')) {
+    menu.classList.remove('is-active');
+  } else {
+    menu.classList.add('is-active'); 
+  }
+});
+
+</script>
+  
+</header>
+                                                            
+<body>
+                                                            
+</body>    
+                                                            
+                                                            
+ </html>                                                           
