@@ -252,7 +252,7 @@ p {
 
 .img-comp-container {
   position: relative;
-  height: 400px; /*should be the same height as the images*/
+  height: 300px; /*should be the same height as the images*/
 }
 
 .img-comp-img {
@@ -293,7 +293,7 @@ function initComparisons() {
   function compareImages(img) {
     var slider, img, clicked = 0, w, h;
     /*get the width and height of the img element*/
-    w = img.offsetWidth;
+    w = 300;
     h = img.offsetHeight;
     /*set the width of the img element to 50%:*/
     img.style.width = (w / 2) + "px";
@@ -492,10 +492,10 @@ toggle.addEventListener('click', function(){
 
  <div class="img-comp-container">
   <div class="img-comp-img">
-   <img src="https://github.com/k-soliman/k-soliman.github.io/blob/main/Sim1_confocal_multipleNPC_noise.png?raw=true" width="400" height="400"></div>
+   <img src="https://github.com/k-soliman/k-soliman.github.io/blob/main/Sim1_confocal_multipleNPC_noise.png?raw=true" width="300" height="300"></div>
   
   <div class="img-comp-img img-comp-overlay">
-    <img src="https://github.com/k-soliman/k-soliman.github.io/blob/main/Sim1_STED_multipleNPC_noise.png?raw=true" width="400" height="400"></div>
+    <img src="https://github.com/k-soliman/k-soliman.github.io/blob/main/Sim1_STED_multipleNPC_noise.png?raw=true" width="300" height="300"></div>
    </div> 
 </div>
 
