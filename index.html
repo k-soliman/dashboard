@@ -542,7 +542,7 @@ initComparisons();
   <script>
  document.addEventListener("DOMContentLoaded", function () {
       // create a `stage` object
-var stage = new NGL.Stage("viewport");
+var stage = new NGL.Stage("tab__content");
 stage.loadFile("rcsb://128D", {defaultRepresentation: true}).then(function (o) {
   o.setPosition([0, 1, 0]);
   o.setRotation([90, 0, 0]);
@@ -552,7 +552,7 @@ stage.loadFile("rcsb://128D", {defaultRepresentation: true}).then(function (o) {
 
 </script>
 
-<div id="viewport" style="width:auto; height:300px;"></div>
+<div id="tab__content" style="width:auto; height:300px;"></div>
 
 
 
@@ -574,4 +574,3 @@ stage.loadFile("rcsb://128D", {defaultRepresentation: true}).then(function (o) {
        
 </body>
 </html>
-
