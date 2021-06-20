@@ -4,7 +4,7 @@
   
   <head>
   
-    
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta prefix="og: http://ogp.me/ns#" property='og:title' content="Kareem Soliman - Data Analyst and Data Scientist"/>
     <meta property="og:type" content="article">
@@ -412,7 +412,10 @@ toggle.addEventListener('click', function(){
     <label for="tab4">Data Extraction</label>
                      
     <input type="radio" id="tab5" name="tabGroup1" class="tab">
-    <label for="tab5">SQL databases</label>                 
+    <label for="tab5">SQL databases</label>   
+    
+    <input type="radio" id="tab6" name="tabGroup1" class="tab">
+    <label for="tab6">Chemistry design</label> 
 
 
     <div class="tab__content">
@@ -533,7 +536,27 @@ initComparisons();
       
 
   </div>
-                                                                                                                                      
+                                                                                                                                     
+  
+ <script src="https://cdn.rawgit.com/arose/ngl/v0.10.4-1/dist/ngl.js"></script>
+  <script>
+ document.addEventListener("DOMContentLoaded", function () {
+      // create a `stage` object
+var stage = new NGL.Stage("viewport");
+stage.loadFile("rcsb://128D", {defaultRepresentation: true}).then(function (o) {
+  o.setPosition([0, 1, 0]);
+  o.setRotation([90, 0, 0]);
+  stage.setSpin(true);
+});
+});
+
+</script>
+
+<div id="viewport" style="width:auto; height:300px;"></div>
+
+
+
+
  </div>
 
 <hr>
@@ -551,3 +574,4 @@ initComparisons();
        
 </body>
 </html>
+
