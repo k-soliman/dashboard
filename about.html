@@ -36,84 +36,45 @@ header a {
   color: inherit;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 1.5em;
-  margin-bottom: 1em;
-}
-
-.js button {
-  position: absolute;
-  right: 1em;
-  top: 1.8em;
-  padding: 10px;
-  border: 2px solid #FFA500;
-  border-radius: 10px;
-  font-size: 1em;
-  background: transparent;
-  color: #ffffff;
-  display: none;
-}
-button:focus, button:hover {
-  background: #fff;
-  color: #000;
-}
-
-.js nav {
-  border-top: 1px solid rgba(255, 255, 255, 0.6);
-  padding: 1em 1em 0;
-}
- nav li {
-  margin-bottom: 1em;
-}
-nav a {
-  display: block;
-}
-
-.js ul {
-  display: none;
-}
-
-.js button {
-  display: block;
-}
-
-ul.is-active {
-  display: block;
-}
-
-@media (min-width: 700px) {
-  .js ul {
-    display: block;
-  }
-
-  .js button {
-    display: none;
-  }
-
-  button {
-    display: none;
-  }
-
-  nav {
-    padding-left: 0;
-  }
-  nav li {
-    display: inline-block;
-    margin-right: 1em;
-  }
-}
-
-ul {
-  display: none;
-}
-
-ul.is-active {
-  display: block;
-}
-
-
 </style>
+                      
+                      
+<style>
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.icon {
+  float: right;
+}
+
+.topnav a:hover {
+  background-color: #87CEEB;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+<style>
 
 
 <style>
@@ -253,35 +214,7 @@ p {
                                                                                                            
 <header>
 
-  <h1>
-    <a href="https://k-soliman.github.io/#"><img alt="Toolit Logo" class="thumbnail" src="https://github.com/k-soliman/k-soliman.github.io/blob/main/toolit.png?raw=true"/ width="50" 
-     height="50" <p> ML</p></a>
-  </h1>
-  <nav role="navigation">
-    <button id="toggle">Menu</button>
-    <ul id="menu">
-      <li><a href="#">ABOUT ME</a></li>
-      <li><a href="https://k-soliman.github.io/software.html">SOFTWARE</a></li>
-      <li><a href="https://www.linkedin.com/in/kareem-soliman-phd/">LINKEDIN-PAGE</a></li>
-    </ul>
-  </nav>
-  
-   <script>
 
-var toggle = document.querySelector('#toggle');
-var menu = document.querySelector('#menu');
-
-toggle.addEventListener('click', function(){
-  if (menu.classList.contains('is-active')) {
-    menu.classList.remove('is-active');
-  } else {
-    menu.classList.add('is-active'); 
-  }
-});
-
-</script>
-  
-</header>
 
 <style>
 
@@ -324,9 +257,35 @@ h4 {
 
 </style>
   
-  <body>
+</header>
+                                        
+<body>
   
-  
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="http://k-soliman.github.io" class="active">Kareem Soliman</a>
+  <div id="myLinks">
+    <a href="https://k-soliman.github.io/about.html">About</a>
+    <a href="https://k-soliman.github.io/software.html">Software</a>
+    <a href="https://www.linkedin.com/in/kareem-soliman-phd/">LinkedIn</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>                         
+                                        
 <br><br>
 <div id="wrapper">
 
