@@ -400,17 +400,12 @@ function showSlides(n) {
     <input type="radio" id="tab4" name="tabGroup1" class="tab">
     <label for="tab4">SQL databases</label>
     
-    <input type="radio" id="tab5" name="tabGroup1" class="tab">
-    <label for="tab5">Chem-Bio-Informatics</label>
 
 
     <div class="tab__content">
       <h3>Covid-19 Data Summary</h3>
      <p>Making data driven decisions. Promoting a data driven culture!</p>
                     
-    <p align="center" style="font-size:15px";>Powered by Toolit(ML)<br>Last update: 05/31/2021</p>
-    
-    <p align="center" style="font-size:15px";><a href="https://covid19.ncdhhs.gov/dashboard/data-behind-dashboards" target="_blank">Source of Data!</a></p>
     
     <! Text Paragraph explanation of the next plot, plot#2>
 
@@ -418,6 +413,9 @@ function showSlides(n) {
 
          <p> The colormap reflects the Number of NEW reported Deaths (plot #1).</p>
   
+ <p align="center" style="font-size:15px";>Last update: 05/31/2021</p>
+    
+    <p align="center" style="font-size:15px";><a href="https://covid19.ncdhhs.gov/dashboard/data-behind-dashboards" target="_blank">Source of Data!</a></p>
 
 <! The Js embedding from bokeh>
                                                                                                                                    
@@ -485,12 +483,12 @@ function showSlides(n) {
     
   <div class="tab__content">
       <h3>FAERS - Drug Data</h3>
-      <p align="center" style="font-size:15px";>Powered by Toolit(ML)<br>Last update: 06/07/2021</p>
+      <p align="center" style="font-size:15px";>Last update: 06/07/2021</p>
     
     <p align="center" style="font-size:15px";><a href="https://www.fda.gov" target="_blank">Source of Data!</a></p>
       
       <p>Staying on top of adverse events reports related to drug use. Managing report systems and databases (SQL and non-SQL types) to keep track of serious side effects.</p>
-      <img src="https://github.com/k-soliman/k-soliman.github.io/blob/main/21Q1_all_med_product.png?raw=true" width="100%" height="auto">
+      <img src="https://github.com/k-soliman/k-soliman.github.io/blob/main/21Q1_all_med_product.png?raw=true" width="400px">
       
 
   </div>
@@ -501,11 +499,11 @@ function showSlides(n) {
       <img src="https://github.com/k-soliman/k-soliman.github.io/blob/main/Database-SQL-program-new.png?raw=true" width="100%" height="auto">
       
 
-  </div>
-                                                                                                                                     
-  
- <script src="https://cdn.rawgit.com/arose/ngl/v0.10.4-1/dist/ngl.js"></script>
+ </div>
+                                                                
+<script src="https://cdn.rawgit.com/arose/ngl/v0.10.4-1/dist/ngl.js"></script>
   <script>
+  var testDiv = document.getElementById ('tab__content');                                                               
  document.addEventListener("DOMContentLoaded", function () {
       // create a `stage` object
 var stage = new NGL.Stage("tab__content");
@@ -518,12 +516,6 @@ stage.loadFile("rcsb://128D", {defaultRepresentation: true}).then(function (o) {
 
 </script>
 
-<div id="tab__content" style="width:auto; height:300px;"></div>
-
-
-
-
-</div>
 
 <hr>                                                   
 <div>
