@@ -2,119 +2,54 @@
 
 <html class="js "== $0 prefix="og: http://ogp.me/ns#">
   
-  <head>
+<head>
   
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta prefix="og: http://ogp.me/ns#" property='og:title' content="Kareem Soliman - Data Analyst and Data Scientist"/>
-    <meta property="og:type" content="article">
-    <meta name="image" property="og:image content="https://github.com/k-soliman/k-soliman.github.io/blob/main/Sim1_STED_multipleNPC_noise.png?raw=true">
-    <meta prefix="og: http://ogp.me/ns#" property='og:description' content="It is all about Data"/>
-    <meta name="author" content="Kareem Soliman">
- 
-                                                
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta prefix="og: http://ogp.me/ns#" property='og:title' content="Kareem Soliman - Data Analyst and Data Scientist"/>
+<meta property="og:type" content="article">
+<meta name="image" property="og:image content="https://github.com/k-soliman/k-soliman.github.io/blob/main/Sim1_STED_multipleNPC_noise.png?raw=true">
+<meta prefix="og: http://ogp.me/ns#" property='og:description' content="It is all about Data"/>
+<meta name="author" content="Kareem Soliman">
+                                          
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-                                                                                                                
-                                                                                                                
+
 <style>
 
-body {
-  font-family: "Arial";
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
 }
 
-a {
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
 }
 
-header {
-  background: #808080;
-  padding: 0.5em;
-  color: #ffffff;
-}
-header a {
-  color: inherit;
+.topnav a.icon {
+  float: right;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 1.5em;
-  margin-bottom: 1em;
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-.js button {
-  position: absolute;
-  right: 1em;
-  top: 1.8em;
-  padding: 10px;
-  border: 2px solid #FFA500;
-  border-radius: 10px;
-  font-size: 1em;
-  background: transparent;
-  color: #ffffff;
-  display: none;
+.active {
+  background-color: #04AA6D;
+  color: white;
 }
-button:focus, button:hover {
-  background: #fff;
-  color: #000;
-}
-
-.js nav {
-  border-top: 1px solid rgba(255, 255, 255, 0.6);
-  padding: 1em 1em 0;
-}
- nav li {
-  margin-bottom: 1em;
-}
-nav a {
-  display: block;
-}
-
-.js ul {
-  display: none;
-}
-
-.js button {
-  display: block;
-}
-
-ul.is-active {
-  display: block;
-}
-
-@media (min-width: 700px) {
-  .js ul {
-    display: block;
-  }
-
-  .js button {
-    display: none;
-  }
-
-  button {
-    display: none;
-  }
-
-  nav {
-    padding-left: 0;
-  }
-  nav li {
-    display: inline-block;
-    margin-right: 1em;
-  }
-}
-
-ul {
-  display: none;
-}
-
-ul.is-active {
-  display: block;
-}
-
-
-</style>
 
 <style>
 
@@ -364,35 +299,6 @@ function initComparisons() {
  <body style="background-color: #ffffff">
                                                                                                            
 <header>
-
-  <h1>
-    <a href="https://k-soliman.github.io/#"><img alt="Toolit Logo" class="thumbnail" src="https://github.com/k-soliman/k-soliman.github.io/blob/main/toolit.png?raw=true"/ width="50" 
-     height="50" <p> ML</p></a>
-  </h1>
-  <nav role="navigation">
-    <button id="toggle">Menu</button>
-    <ul id="menu">
-      <li><a href="https://k-soliman.github.io/about.html">ABOUT ME</a></li>
-      <li><a href="https://k-soliman.github.io/nlp-text.html">NLP-Text Mining</a></li>                                                       
-      <li><a href="https://k-soliman.github.io/software.html">SOFTWARE</a></li>                                                
-      <li><a href="https://www.linkedin.com/in/kareem-soliman-phd/">LINKEDIN-PAGE</a></li>
-    </ul>
-  </nav>
-  
-   <script>
-
-var toggle = document.querySelector('#toggle');
-var menu = document.querySelector('#menu');
-
-toggle.addEventListener('click', function(){
-  if (menu.classList.contains('is-active')) {
-    menu.classList.remove('is-active');
-  } else {
-    menu.classList.add('is-active'); 
-  }
-});
-
-</script>
   
 
 <style>
@@ -485,12 +391,12 @@ toggle.addEventListener('click', function(){
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -498,28 +404,44 @@ toggle.addEventListener('click', function(){
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-</style>  
+</style>
 
 </header>
+
+<body>
+
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="http://k-soliman.github.io" class="active">Kareem Soliman</a>
+  <div id="myLinks">
+    <a href="https://k-soliman.github.io/about.html">About</a>
+    <a href="https://k-soliman.github.io/software.html">Software</a>
+    <a href="https://www.linkedin.com/in/kareem-soliman-phd/">LinkedIn</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
 <div class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="https://github.com/k-soliman/k-soliman.github.io/blob/main/PROTOFOLIO.png?raw=true" style="width:100%">
-  <div class="text">Profile</div>
+  <img src="https://github.com/k-soliman/k-soliman.github.io/blob/main/Protofolio.png?raw=true" style="width:100%">
+  <div class="text"></div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="https://github.com/k-soliman/k-soliman.github.io/blob/main/Cheminformatics-DrugDiscovery%20research.png?raw=true" style="width:100%">
-  <div class="text">Word Clouds</div>
+  <img src="https://github.com/k-soliman/k-soliman.github.io/blob/main/Cheminformatis-project.png?raw=true" style="width:100%">
+  <div class="text"></div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="https://github.com/k-soliman/k-soliman.github.io/blob/main/Coronavirus_review_black.png?raw=true" style="width:100%">
-  <div class="text">Word Clouds</div>
+  <img src="https://github.com/k-soliman/k-soliman.github.io/blob/main/Coronavirus_.png?raw=true" style="width:100%">
+  <div class="text"></div>
 </div>
 
 
@@ -530,12 +452,10 @@ toggle.addEventListener('click', function(){
 <br>
 
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
 </div>
-
-
 
 <script>
 var slideIndex = 1;
@@ -553,15 +473,15 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+      slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
 </script>
@@ -584,10 +504,10 @@ function showSlides(n) {
     <label for="tab4">Data Extraction</label>
                      
     <input type="radio" id="tab5" name="tabGroup1" class="tab">
-    <label for="tab5">SQL databases</label>   
+    <label for="tab5">SQL databases</label>
     
     <input type="radio" id="tab6" name="tabGroup1" class="tab">
-    <label for="tab6">Chemistry design</label> 
+    <label for="tab6">Chemistry design</label>
 
 
     <div class="tab__content">
@@ -672,7 +592,7 @@ function showSlides(n) {
   
   <div class="img-comp-img img-comp-overlay">
     <img src="https://github.com/k-soliman/k-soliman.github.io/blob/main/Sim1_STED_multipleNPC_noise.png?raw=true" width="300" height="300"></div>
-   </div> 
+   </div>
 </div>
 
 <script>
@@ -730,17 +650,15 @@ stage.loadFile("rcsb://128D", {defaultRepresentation: true}).then(function (o) {
 
  </div>
 
-<hr>
-
-                                                        
+<hr>                                                   
 <div>
-<h1>Latest News</h1>
+<h1>LinkedIn Posts</h1>
 <h4>NLP and WordClouds can be useful tools in building an informed Business Decisions!</h4>
-<p>Date: 22-June-2021</p> 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6812961104432562176" height="300px" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>                                                        
+<p>Date: 22-June-2021</p>
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6812961104432562176" height="300px" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 <h4>Compliance: Improving compliance with data science!</h4>
 <p>Date: 21-June-2021</p>
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6812599507851730944" height="300px" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>                                                       
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6812599507851730944" height="300px" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 <h4>Chemistry: Collaboration with the life science industry!</h4>
 <p>Date: 26-March-2021</p>
 
