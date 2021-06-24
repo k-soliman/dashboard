@@ -106,8 +106,33 @@ div.desc {
 
 <body>
 
-<h2>Responsive Image Gallery</h2>
-<h4>Resize the browser window to see the effect.</h4>
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="http://k-soliman.github.io" class="active">Kareem Soliman</a>
+  <div id="myLinks">
+    <a href="https://k-soliman.github.io/about.html">About</a>
+    <a href="https://k-soliman.github.io/software.html">Software</a>
+    <a href="https://www.linkedin.com/in/kareem-soliman-phd/">LinkedIn</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>                                      
+
+<h2>Title</h2>
+<h4>Description</h4>
 
 <div class="responsive">
   <div class="gallery">
@@ -210,7 +235,9 @@ div.desc {
   </div>
 </div>
 
-
+<br>                                
+<hr>
+                                
 <div class="clearfix"></div>
 
 <div style="padding:6px;">
