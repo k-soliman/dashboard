@@ -292,6 +292,22 @@ p {
 }
 </style>
 
+<style>
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px;
+}
+
+/* Clearfx (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
 </header>
 
 <body>
@@ -492,15 +508,24 @@ function showSlides(n) {
  
 
 <hr> 
-                                                                                                                                       
+                                  
 <div>
-<h1>LinkedIn Posts</h1>
-<h4>Chemistry: Collaboration with the life science industry!</h4>
+<h1>Latest News</h1>
+<div class="row">
+  <div class="column">
+<h4>Chemistry: Collaboration with the Life Science industry!</h4>
 <p>Date: 26-March-2021</p>
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6785182820680654848" height="300px" width="50%" allowfullscreen title="Embedded post";></iframe>
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6785182820680654848" height="300px" width="80%" allowfullscreen title="Embedded post";></iframe>
 </div>
 
-<div>
+<div class="row">
+  <div class="column">
+  <h4>Microscopy: Imaging Pipeline for Superresolution Microscopy.</h4>
+<p>Date: 07-August-2015</p>
+<img frameborder="1" scrolling="yes" width="60%" height="300px" src="https://github.com/k-soliman/k-soliman.github.io/blob/main/images/bmc-twitter.JPEG?raw=true" title="BMC post";>
+</div></div>
+
+
 <br>
 
 <hr>
